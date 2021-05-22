@@ -1,0 +1,62 @@
+
+<app-menu></app-menu>
+<po-page-default class="po-m-5">
+
+  <po-container class="po-md-6 containerCoder"
+  [p-no-border]="true"
+  [p-no-padding]="true"
+  [p-no-shadow]="true">
+
+  <po-code-editor
+  class="po-md-12"
+  [(ngModel)]="codeEditor"
+  p-height="300"
+  [p-language]="language"
+  [p-readonly]="properties.includes('readonly')"
+  [p-theme]="theme">
+>
+</po-code-editor>
+
+  </po-container>
+
+  <po-container class="po-md-6 containerFields"
+   [p-no-border]="true"
+   [p-no-padding]="true"
+   [p-no-shadow]="true" >
+
+   <po-input
+     name="projeto"
+     p-label="Seu Projeto"
+     p-placeholder = "Nome do Projeto" >
+   </po-input>
+
+   <po-textarea
+     name="descricao"
+     p-placeholder="Descrição">
+   </po-textarea>
+
+   <po-select
+     name="language"
+     [(ngModel)]="language"
+     p-label="Personalização"
+     p-placeholder="Linguagem"
+     [p-options]="languageOptions">
+   </po-select>
+
+   <po-select
+    name="theme"
+    [(ngModel)]="theme"
+    p-placeholder="Tema"
+    [p-options]="themeOptions">
+  </po-select>
+
+  <po-button class="po-p-0 po-md-12"
+    p-label="Salvar projeto "
+    (p-click)="onClick()">
+  </po-button>
+
+  </po-container>
+
+</po-page-default>
+
+

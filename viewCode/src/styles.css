@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color:#051D3B;
+}
+.po-menu-header-container-logo{
+  background-color:#051D3B;
+}
+.po-menu-body{
+  background-color:#051D3B;
+}
+.po-menu-item {
+  border: none;
+}
+.po-menu-item-selected{
+background-color:#062244;
+
+}
+.po-menu-item-selected:hover{
+  color: #c9357d;
+  background-color:#051D3B;
+}
+
+.po-page-content{
+  margin-left: 19%;
+  background-color:#051D3B ;
+  padding-left: 10%;
+}
+.po-container{
+  background-color:#051D3B ;
+}
+
+.po-input{
+  background-color: #1b3350;
+  border: none;
+}
+.po-textarea{
+  background-color:#1b3350;
+  border:none !important;
+}
+
+.po-select-button{
+ background-color:#1b3350;
+ border: none;
+}
+
+.po-button{
+  background-color: #051D3B;
+  border-color: #c9357d;
+}
+
+.po-button-label{
+  color: #c9357d;
+}
+
+
